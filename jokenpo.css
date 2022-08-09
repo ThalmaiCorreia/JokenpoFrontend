@@ -2,15 +2,18 @@
     font-weight: 400;
     background-image: url(./img/fundo.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
-#central{
-    display: flex;
-    align-items: right;
-}
 
 #titulo {
-     background-color: #fff;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    margin-top: -10px;
+    height: 60px;
+    background-color: #fff;
     border-radius: 5px;
 }
 
@@ -65,6 +68,7 @@ ul#jogador-escolha li a:hover,
 ul#computador-escolha li a.selecionado,
 ul#jogador-escolha li a.selecionado {
     opacity: 1;
+    cursor: pointer;
 }
 
 #jogador-nome,
@@ -98,9 +102,37 @@ ul#jogador-escolha li a.selecionado {
 
 
 #mensagens {
-    background-color: darkgray;
+    background-color: gray;
     font-size: 32px;
+    height: 50px;
     border-radius: 5px;
     margin: 40px 0;
+    padding: 15px;
+    text-align: center;
+}
+
+#divbtn {
+    margin: 7px;
+}
+
+#botao {
+    border: none;
+    background-color: gray ;
+    color: black ;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#botao:hover {
+background-color: darkgray;
+}
+
+#botao:active {
+background-color: gray;
+}
+
+#footer {
+    display: block;
     padding: 20px;
 }
